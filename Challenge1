@@ -1,0 +1,38 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        String s=String.valueOf(n);
+        for(char ch:s.toCharArray())
+        {
+            if(ch=='0')
+            System.out.print("zero");
+            if(ch=='1')
+            System.out.print("one");
+            if(ch=='2')
+            System.out.print("two");
+            if(ch=='3')
+            System.out.print("three");
+            if(ch=='4')
+            System.out.print("four");
+            if(ch=='5')
+            System.out.print("five");
+            if(ch=='6')
+            System.out.print("six");
+            if(ch=='7')
+            System.out.print("seven");
+            if(ch=='8')
+            System.out.print("eight");
+            if(ch=='9')
+            System.out.print("nine");
+            
+        }
+	}
+}
