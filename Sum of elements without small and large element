@@ -1,0 +1,19 @@
+
+import java.util.*;
+public class Kata
+{
+  public static int sum(int[] numbers)
+  {
+    if(numbers==null || numbers.length==1 || numbers.length==2 )
+      
+    return 0;
+    int n=numbers.length;
+    int sum=0;
+    Arrays.sort(numbers);
+    for(int i=1;i<n-1;i++)
+      {
+      sum+=numbers[i];
+    }
+    return sum;
+  }
+}
