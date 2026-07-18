@@ -1,0 +1,51 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int arr[]=new int[n];
+		for(int i=0;i<n;i++)
+		{
+		    arr[i]=sc.nextInt();
+		}
+		var odd=new ArrayList<Integer>();
+		var even=new ArrayList<Integer>();
+		for(int i=0;i<n;i++)
+		{
+		    if(i%2==0)
+		    {
+		        odd.add(arr[i]);
+		    }
+		    else if(i%2!=0)
+		    {
+		        even.add(arr[i]);
+		    }
+		}
+		Collections.sort(odd,Collections.reverseOrder());
+		Collections.sort(even);
+		int oddi=0,eveni=0;
+		for(int i=0;i<n;i++)
+		{
+		    if(i%2==0)
+		    {
+		        arr[i]=odd.get(oddi++);
+		    }
+		    else if(i%2!=0)
+		    {
+		        arr[i]=even.get(eveni++);
+		    }
+		}
+		for(int x:arr)
+		{
+		    System.out.print(x+" ");
+		}
+		
+
+	}
+}
